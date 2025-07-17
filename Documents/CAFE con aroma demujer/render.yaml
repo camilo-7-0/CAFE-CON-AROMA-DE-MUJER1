@@ -1,8 +1,14 @@
 services:
   - type: web
-    name: cafe-con-aroma-backend
+    name: cafe-con-aroma-de-mujer-backend
     env: java
     buildCommand: "./gradlew build"
     startCommand: "./gradlew bootRun"
+    repo: https://github.com/camilo-7-0/CAFE-con-aroma-de-mujer
     branch: main
-    autoDeploy: true
+    rootDir: "Documents/CAFE"
+    plan: free
+    envVars:
+      - key: JAVA_HOME
+        value: /opt/render/project/java
+JAVA_HOME = /usr/lib/jvm/java-11-openjdk
