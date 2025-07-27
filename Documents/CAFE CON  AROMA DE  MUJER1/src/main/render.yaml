@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: cafe-aroma-api
-    env: docker
-    plan: free
-    autoDeploy: false
-
-build:
-  dockerfilePath: ruta/del/Dockerfile
