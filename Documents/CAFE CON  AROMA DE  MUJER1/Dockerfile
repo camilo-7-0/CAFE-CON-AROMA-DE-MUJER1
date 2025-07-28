@@ -9,6 +9,7 @@ RUN ./gradlew build
 # Copiamos el JAR generado a /app/app.jar
 COPY build/libs/*.jar app.jar
 
+
 EXPOSE 8080
 
 # Ejecutamos la app con el JAR copiado
