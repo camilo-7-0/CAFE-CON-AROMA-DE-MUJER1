@@ -1,17 +1,21 @@
+
+# Usa Java 17 en una imagen liviana
 FROM eclipse-temurin:17-jdk-alpine
+
+# Define directorio de trabajo dentro del contenedor
 WORKDIR /app
 
+# Copia todo el proyecto al contenedor
 COPY . .
 
-RUN chmod +x gradlew
-RUN ./gradlew build
+# Construye el proyecto con Gradle
+RUN ./gradlew build --no-daemon
 
-# Copiamos el JAR generado a /app/app.jar
-COPY build/libs/*.jar app.jar
+# Copia el .jar generado en build/libs al nombre app.jar
+RUN cp build/libs/*.jar app.jar
 
-
+# Exponer el puerto usado por Spring Boot
 EXPOSE 8080
 
-# Ejecutamos la app con el JAR copiado
-ENTRYPOINT ["java", "-jar", "app.jar"]
-
+# Ejecuta la app
+CMD ["java", "-jar", "app.jar"]
