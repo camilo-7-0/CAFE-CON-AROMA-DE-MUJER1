@@ -1,0 +1,40 @@
+# 🛠️ Carpetas generadas por Gradle
+.gradle/
+build/
+out/
+
+# 🧠 Configuración del entorno de desarrollo (IDE)
+.idea/
+*.iml
+
+# 🔧 Archivos de compilación y binarios
+*.class
+*.jar
+!build/libs/panederia-0.0.1-SNAPSHOT.jar
+
+
+# 📄 Archivos de registro
+*.log
+
+# 🗃️ Archivos temporales del sistema o del editor
+*.tmp
+*.swp
+*.lock
+
+# 💾 Almacenamiento aislado en Windows
+AppData/
+IsolatedStorage/
+
+# 🚀 Archivos de despliegue
+Dockerfile
+render.yaml
+
+# ⚠️ Evitar subir archivos personales o documentos locales
+~$*
+*.docx
+
+AppData/
+*.log
+*.txt
+*.json
+
