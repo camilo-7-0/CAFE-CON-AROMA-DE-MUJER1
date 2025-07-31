@@ -26,7 +26,7 @@ AppData/
 IsolatedStorage/
 
 # 🚀 Archivos de despliegue
-Dockerfile
+
 render.yaml
 
 # ⚠️ Evitar subir archivos personales o documentos locales
